@@ -44,11 +44,18 @@ function renderizarCelulares() {
             <h3>${celular.nome}</h3>
             <p>${celular.descricao}</p>
             <p>Preço: R$ ${celular.preco}</p>
+            <button class="detalhes-produto">Ver Detalhes</button>
             <button class="add-to-cart">Adicionar ao Carrinho</button>
         `;
 
         // Adicionar o cartão ao container da lista de produtos
         productList.appendChild(productCard);
+
+        // Adicionar evento de clique no botão "Ver Detalhes"
+        productCard.querySelector('.detalhes-produto').addEventListener('click', () => {
+            // Redirecionar para a página de detalhes do produto com o nome do produto na URL
+            window.location.href = `produto.html?produto=${encodeURIComponent(celular.nome)}`;
+        });
 
         // Adicionar evento de clique no botão "Adicionar ao Carrinho"
         productCard.querySelector('.add-to-cart').addEventListener('click', () => {
