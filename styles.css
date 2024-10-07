@@ -1,3 +1,9 @@
+@font-face {
+    font-family: 'Karma Future';
+    src: url('../fonts/Karma Future.otf') format('opentype');
+}
+
+/* Reseta e estruturação básica */
 * {
     margin: 0;
     padding: 0;
@@ -6,8 +12,10 @@
 
 body {
     font-family: Arial, sans-serif;
+    font-size: 18px;
 }
 
+/* Cabeçalho e Navegação */
 header {
     background-color: white;
     color: #000;
@@ -20,18 +28,74 @@ nav ul {
     justify-content: space-around;
     margin: 0;
     padding: 0;
+    flex-wrap: wrap;
 }
 
 nav ul li {
-    display: inline;
+    display: inline-block;
 }
 
 nav ul li a {
     color: #000;
     text-decoration: none;
     padding: 10px 20px;
+    display: block;
 }
 
+/* Banner */
+
+.banner h1 {
+    font-family: 'Karma Future', sans-serif; 
+    background-image: url(images/background_banner.jpeg);
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    color: #060111;
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    height: 30vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+/* Seção do Carrossel*/
+
+.carousel {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 2rem;
+}
+
+.carousel-btn {
+    background-color: #5a30bb77;
+    color: #fff;
+    border: none;
+    padding: 10px;
+    cursor: pointer;
+    font-size: 2rem;
+    transition: background-color 0.5s ease;
+}
+
+.carousel-btn:hover {
+    background-color: #5a30bb77;
+}
+
+.carousel-images {
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+}
+
+.carousel-images img {
+    max-width: 100%;
+    height: auto;
+}
+
+/* Seção de Banner */
 .banner {
     text-align: center;
     background-color: #f4f4f4;
@@ -39,8 +103,7 @@ nav ul li a {
 }
 
 .banner h1 {
-    margin: 0;
-    font-size: 2.5em;
+    font-size: 2em;
 }
 
 .banner p {
@@ -48,6 +111,7 @@ nav ul li a {
     color: #666;
 }
 
+/* Ícone do Carrinho */
 .cart-icon {
     position: absolute;
     right: 2rem;
@@ -59,79 +123,7 @@ nav ul li a {
     height: 24px;
 }
 
-.hero-section h1 {
-    font-size: 2.5rem;
-    font-weight: bold;
-    color: #000;
-}
-
-.hero-section p {
-    font-size: 1.2rem;
-    color: #777;
-    margin-top: 0.5rem;
-}
-
-.carousel {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    margin: 2rem 0;
-}
-
-.carousel-images {
-    display: flex;
-    gap: 2rem;
-}
-
-.carousel-btn {
-    background: none;
-    border: none;
-    font-size: 2rem;
-    cursor: pointer;
-}
-
-.product-search {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    margin: 2rem 0;
-}
-
-.product-search input {
-    padding: 0.5rem;
-    font-size: 1rem;
-    border: 1px solid #ccc;
-    border-radius: 4px;
-    margin-right: 0.5rem;
-}
-
-.product-search button {
-    padding: 0.5rem;
-    font-size: 1rem;
-    background-color: #333;
-    color: #fff;
-    border: none;
-    cursor: pointer;
-}
-
-.filter-options {
-    margin-left: 2rem;
-}
-
-.filter-btn {
-    background: none;
-    border: 1px solid #333;
-    padding: 0.5rem 1rem;
-    margin-left: 0.5rem;
-    cursor: pointer;
-    border-radius: 8px;
-}
-
-.filter-btn.active {
-    background-color: #333;
-    color: #fff;
-}
-
+/* Lista de Produtos */
 .product-list {
     display: flex;
     justify-content: center;
@@ -147,12 +139,74 @@ nav ul li a {
     text-align: center;
 }
 
-.product-card img {
-    width: 100%;
-    height: 100px;
-    object-fit: cover;
+.product-card a {
+    color: #000;
+    text-decoration: none;
+    font-weight: bold;
+    display: block;
+    margin-top: 10px;
 }
 
+.product-card img {
+    width: 100%;
+    max-width: 150px;
+    height: auto;
+    object-fit: cover;
+    margin: 0 auto;
+}
+
+/* Botões dentro dos produtos da lista */
+.product-card button {
+    padding: 10px 15px;
+    padding-bottom: 2px;
+    font-size: 16px;
+    background-color: #fff;
+    color: #00000077;
+    border: 2px;
+    cursor: pointer;
+    display: block;
+    width: 100%;
+    transition: background-color 0.5s ease, color 0.5s ease; 
+}
+
+.product-card button:hover {
+    background-color: #5a30bb77;
+    color: #fff;
+}
+
+/* Barra de Pesquisa */
+.product-search {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 2rem 0; 
+}
+
+.product-search input {
+    padding: 0.5rem;
+    font-size: 1rem;
+    border: 1px solid #ccc;
+    border-right: none; 
+    border-radius: 0; 
+    width: 200px; 
+}
+
+.product-search button {
+    padding: 0.5rem;
+    font-size: 1rem;
+    background-color: #fff;
+    color: #2C31E8;
+    border: 1px solid #2C31E8;
+    cursor: pointer;
+    transition: background-color 0.5s ease, color 0.5s ease; 
+}
+
+.product-search button:hover {
+    background-color: #2C31E8;
+    color: #fff;
+}
+
+/* Rodapé */
 footer {
     background-color: #fff;
     padding: 2rem 1rem;
@@ -162,45 +216,70 @@ footer {
     flex-wrap: wrap;
 }
 
+/* Links sociais no rodapé */
 .social-links {
     display: flex;
     gap: 10px;
 }
 
-.social-links a img {
-    width: 20px;
-    height: 20px;
-}
-
 .footer-sections {
     display: flex;
     justify-content: space-between;
+    flex-wrap: wrap;
     width: 100%;
     margin-top: 2rem;
 }
 
 .footer-column {
     flex: 1;
+    min-width: 200px;
     margin-right: 1rem;
 }
 
-.footer-column h3 {
-    font-size: 1rem;
-    font-weight: bold;
-    margin-bottom: 1rem;
+/* Estilo de Botões Gerais */
+button {
+    padding: 10px 20px;
+    font-size: 18px;
+    background-color: #fff;
+    color: #2C31E8;
+    border: 2px solid #2C31E8;
+    cursor: pointer;
+    transition: background-color 0.5s ease, color 0.5s ease; 
 }
 
-.footer-column ul {
-    list-style: none;
+button:hover {
+    background-color: #2C31E8;
+    color: white;
 }
 
-.footer-column ul li {
-    margin-bottom: 0.5rem;
-    color: #555;
-}
+/* Responsividade */
+@media (max-width: 768px) {
+    .banner h1 {
+        font-size: 1.8em;
+    }
 
-.product-card img {
-    width: 110px;  /* Define a largura das imagens */
-    height: 150px; /* Define a altura das imagens */
-    object-fit: cover; /* Mantém a proporção e preenche a área */
+    .banner p {
+        font-size: 1em;
+    }
+
+    nav ul {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .product-card {
+        width: 100%;
+        max-width: 300px;
+    }
+
+    .product-card img {
+        width: 100%;
+        max-width: 150px;
+        height: auto;
+    }
+
+    footer {
+        flex-direction: column;
+        text-align: center;
+    }
 }
