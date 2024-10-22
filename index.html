@@ -14,7 +14,7 @@
                 <li><a href="#">Início</a></li>
                 <li><a href="#">Produtos</a></li>
                 <li><a href="#">Contato</a></li>
-                <li><a href="#" ><img src="icons/cart.svg" alt="Cart"></a></li>
+                <li><a href="#"><img src="icons/cart.svg" alt="Cart"></a></li>
             </ul>
         </nav>
     </header>
@@ -24,15 +24,16 @@
         <h1>Laricel Celulares</h1>
     </section>
 
-    <!-- Carrosel de propagandas -->
     <section class="carousel">
         <button class="carousel-btn left-btn">⟵</button>
         <div class="carousel-images">
-            <img src="images/provisorio.svg" alt="Produto 1">
-            <img src="images/provisorio.svg" alt="Produto 2">
+            <a id="carousel-link" href="#">
+                <img id="carousel-img" src="images/provisorio.svg" alt="Produto">
+                <div id="carousel-name" class="carousel-name">Nome do Produto</div> <!-- Nome do dispositivo -->
+            </a>
         </div>
         <button class="carousel-btn right-btn">⟶</button>
-    </section>
+    </section>    
 
     <!-- Barra de pesquisa de botões de acesso rápido -->
     <section class="product-search">

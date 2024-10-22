@@ -1,3 +1,4 @@
+/* Fonte personalizada */
 @font-face {
     font-family: 'Karma Future';
     src: url('../fonts/Karma Future.otf') format('opentype');
@@ -16,6 +17,26 @@ body {
 }
 
 /* Cabeçalho e Navegação */
+
+/* Banner */
+.banner h1 {
+    font-family: 'Karma Future', sans-serif; 
+    background-image: url(images/background_banner.jpeg);
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    color: #060111;
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    height: 30vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
 header {
     background-color: white;
     color: #000;
@@ -42,27 +63,7 @@ nav ul li a {
     display: block;
 }
 
-/* Banner */
-
-.banner h1 {
-    font-family: 'Karma Future', sans-serif; 
-    background-image: url(images/background_banner.jpeg);
-    background-size: cover;
-    background-position: center;
-    background-attachment: fixed;
-    color: #060111;
-    margin: 0;
-    padding: 0;
-    width: 100%;
-    height: 30vh;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    text-align: center;
-}
-/* Seção do Carrossel*/
-
+/* Seção do Carrossel */
 .carousel {
     display: flex;
     justify-content: center;
@@ -123,90 +124,53 @@ nav ul li a {
     height: 24px;
 }
 
-/* Lista de Produtos */
-.product-list {
+/* Seção de Detalhes do Produto */
+.product-details {
     display: flex;
-    justify-content: center;
-    flex-wrap: wrap;
-    gap: 1rem;
+    justify-content: space-between;
+    align-items: flex-start;
     padding: 2rem;
+    gap: 2rem;
 }
 
-.product-card {
-    border: 1px solid #ddd;
-    padding: 1rem;
-    width: 150px;
-    text-align: center;
-}
-
-.product-card a {
-    color: #000;
-    text-decoration: none;
-    font-weight: bold;
-    display: block;
-    margin-top: 10px;
-}
-
-.product-card img {
-    width: 100%;
-    max-width: 150px;
+.product-details img {
+    width: 50%;
     height: auto;
     object-fit: cover;
-    margin: 0 auto;
 }
 
-/* Botões dentro dos produtos da lista */
-.product-card button {
-    padding: 10px 15px;
-    padding-bottom: 2px;
-    font-size: 16px;
-    background-color: #fff;
-    color: #00000077;
-    border: 2px;
-    cursor: pointer;
-    display: block;
-    width: 100%;
-    transition: background-color 0.5s ease, color 0.5s ease; 
-}
-
-.product-card button:hover {
-    background-color: #5a30bb77;
-    color: #fff;
-}
-
-/* Barra de Pesquisa */
-.product-search {
+.product-info {
+    width: 50%;
     display: flex;
-    justify-content: center;
-    align-items: center;
-    margin: 2rem 0; 
+    flex-direction: column;
+    justify-content: space-around;
 }
 
-.product-search input {
-    padding: 0.5rem;
-    font-size: 1rem;
-    border: 1px solid #ccc;
-    border-right: none; 
-    border-radius: 0; 
-    width: 200px; 
+.product-info h2 {
+    font-size: 2rem;
+    margin-bottom: 1rem;
 }
 
-.product-search button {
-    padding: 0.5rem;
-    font-size: 1rem;
+.product-info p {
+    font-size: 1.2rem;
+    line-height: 1.5;
+    margin-bottom: 1rem;
+}
+
+.product-info button {
+    padding: 10px 20px;
+    font-size: 18px;
     background-color: #fff;
     color: #2C31E8;
-    border: 1px solid #2C31E8;
+    border: 2px solid #2C31E8;
     cursor: pointer;
     transition: background-color 0.5s ease, color 0.5s ease; 
 }
 
-.product-search button:hover {
+.product-info button:hover {
     background-color: #2C31E8;
-    color: #fff;
+    color: white;
 }
-
-
 
 /* Rodapé */
 footer {
@@ -218,7 +182,6 @@ footer {
     flex-wrap: wrap;
 }
 
-/* Links sociais no rodapé */
 .social-links {
     display: flex;
     gap: 10px;
@@ -254,38 +217,6 @@ button:hover {
     color: white;
 }
 
-/* Responsividade */
-@media (max-width: 768px) {
-    .banner h1 {
-        font-size: 1.8em;
-    }
-
-    .banner p {
-        font-size: 1em;
-    }
-
-    nav ul {
-        flex-direction: column;
-        text-align: center;
-    }
-
-    .product-card {
-        width: 100%;
-        max-width: 300px;
-    }
-
-    .product-card img {
-        width: 100%;
-        max-width: 150px;
-        height: auto;
-    }
-
-    footer {
-        flex-direction: column;
-        text-align: center;
-    }
-}
-
 .carousel-images {
     display: flex;
     align-items: center; 
@@ -301,4 +232,35 @@ button:hover {
     margin-top: 10px;
     font-size: 16px;
     font-weight: bold; 
+}
+
+/* Responsividade */
+@media (max-width: 768px) {
+    .banner h1 {
+        font-size: 1.8em;
+    }
+
+    .banner p {
+        font-size: 1em;
+    }
+
+    nav ul {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .product-details {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+
+    .product-details img {
+        max-width: 100%;
+    }
+
+    footer {
+        flex-direction: column;
+        text-align: center;
+    }
 }
