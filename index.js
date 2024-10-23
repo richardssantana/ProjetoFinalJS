@@ -66,7 +66,6 @@ function renderizarCelulares() {
             <p>Preço: R$ ${celular.preco}</p>
             <button class="detalhes-produto">Ver Detalhes</button>
             <button class="add-to-cart">Adicionar ao Carrinho</button>
-            <!-- Removido o texto de venda -->
         `;
 
         // Adicionar o cartão ao container da lista de produtos

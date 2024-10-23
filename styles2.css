@@ -1,10 +1,8 @@
-/* Fonte personalizada */
 @font-face {
     font-family: 'Karma Future';
     src: url('../fonts/Karma Future.otf') format('opentype');
 }
 
-/* Reseta e estruturação básica */
 * {
     margin: 0;
     padding: 0;
@@ -16,9 +14,6 @@ body {
     font-size: 18px;
 }
 
-/* Cabeçalho e Navegação */
-
-/* Banner */
 .banner h1 {
     font-family: 'Karma Future', sans-serif; 
     background-image: url(images/background_banner.jpeg);
@@ -63,7 +58,6 @@ nav ul li a {
     display: block;
 }
 
-/* Seção do Carrossel */
 .carousel {
     display: flex;
     justify-content: center;
@@ -96,7 +90,6 @@ nav ul li a {
     height: auto;
 }
 
-/* Seção de Banner */
 .banner {
     text-align: center;
     background-color: #f4f4f4;
@@ -112,7 +105,6 @@ nav ul li a {
     color: #666;
 }
 
-/* Ícone do Carrinho */
 .cart-icon {
     position: absolute;
     right: 2rem;
@@ -124,7 +116,6 @@ nav ul li a {
     height: 24px;
 }
 
-/* Seção de Detalhes do Produto */
 .product-details {
     display: flex;
     justify-content: space-between;
@@ -172,7 +163,6 @@ nav ul li a {
     color: white;
 }
 
-/* Rodapé */
 footer {
     background-color: #fff;
     padding: 2rem 1rem;
@@ -201,7 +191,6 @@ footer {
     margin-right: 1rem;
 }
 
-/* Estilo de Botões Gerais */
 button {
     padding: 10px 20px;
     font-size: 18px;
@@ -234,7 +223,6 @@ button:hover {
     font-weight: bold; 
 }
 
-/* Responsividade */
 @media (max-width: 768px) {
     .banner h1 {
         font-size: 1.8em;
@@ -263,4 +251,9 @@ button:hover {
         flex-direction: column;
         text-align: center;
     }
+}
+
+.product-details-container img {
+    width: 600px;
+    margin: 0 auto;
 }
