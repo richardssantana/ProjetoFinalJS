@@ -1,0 +1,265 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap"rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/boxicons@latest/css/boxicons.min.css">
+    <link rel="stylesheet" href="https://unpkg.com/boxicons@latest/css/boxicons.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+
+    <title>SmartZone - Loja de Celulares</title>
+</head>
+
+<body>
+    <header>
+        <a href="#" class="logo"><i class='bx bx-mobile'></i>SmartZone</a>
+        
+        <ul class="navegação">
+            <li><a href="#">Visão geral</a></li>
+            <li><a href="#">Espaço Tec</a></li>
+            <li><a href="#">Reviews</a></li>
+            <li><a href="#">Contato</a></li>
+    
+            <div class="header-icons">
+                <div class="cart-icon">
+                    <i class='bx bx-cart'></i>
+                    <span class="notification">0</span> 
+                </div>
+                <div id="menu"><i class='bx bx-menu'></i></div>
+            </div>
+        </ul>
+    </header>
+
+    <nav id="nav">
+        <div class="navTop">
+            <div class="navItem">
+                <img src="./img/logo.png" alt="" width="100px">
+            </div>
+            <div class="navItem">
+                <div class="search">
+                    <input type="text" placeholder="busque aqui seu produto..." class="searchInput">
+                    <img src="./img/search.png" width="20" height="20" alt="" class="searchIcon">
+                </div>
+            </div>
+            <div class="navItem">
+                <span class="limitedOffer">Oferta Limitada!</span>
+            </div>
+        </div>
+        <div class="navBottom">
+            <h3 class="menuItem">APPLE</h3>
+            <h3 class="menuItem">SAMSUNG</h3>
+            <h3 class="menuItem">MOTOROLA</h3>
+            <h3 class="menuItem">XIAOMI</h3>
+            <h3 class="menuItem">ASUS</h3>
+        </div>
+    </nav>
+    <div class="slider">
+        <div class="sliderWrapper">
+            <div class="sliderItem">
+                <img src="./img/iphone.png" alt="" class="sliderImg"> 
+                <div class="sliderBg"></div>
+                <h1 class="sliderTitle">APPLE</br> IPHONE 16</br> PLUS</h1>
+                <h2 class="sliderPrice">R$9.024,05</h2>
+                <a href="#product">
+                    <button class="buyButton">COMPRE AGORA!</button>
+                </a>
+            </div>
+            <div class="sliderItem">
+                <img src="./img/samsung.png" alt="" class="sliderImg">
+                <div class="sliderBg"></div>
+                <h1 class="sliderTitle">SAMSUNG</br> GALAXY S24</br> ULTRA</h1>
+                <h2 class="sliderPrice">R$9.590,00</h2>
+                <a href="#product">
+                    <button class="buyButton">COMPRE AGORA!</button>
+                </a>
+            </div>
+            <div class="sliderItem">
+                <img src="./img/motorola.png" alt="" class="sliderImg">
+                <div class="sliderBg"></div>
+                <h1 class="sliderTitle">MOTOROLA</br> RAZR 50</br> DOBRÁVEL</h1>
+                <h2 class="sliderPrice">R$4.949,10</h2>
+                <a href="#product">
+                    <button class="buyButton">COMPRE AGORA!</button>
+                </a>
+            </div>
+            <div class="sliderItem">
+                <img src="./img/xiaomi.png" alt="" class="sliderImg">
+                <div class="sliderBg"></div>
+                <h1 class="sliderTitle">XIAOMI</br> REDIMI NOTE</br> 13 PRO</h1>
+                <h2 class="sliderPrice">R$2.464,99</h2>
+                <a href="#product">
+                    <button class="buyButton">COMPRE AGORA!</button>
+                </a>
+            </div>
+            <div class="sliderItem">
+                <img src="./img/asus.png" alt="" class="sliderImg">
+                <div class="sliderBg"></div>
+                <h1 class="sliderTitle">ASUS</br> ZENFONE</br> 10</h1>
+                <h2 class="sliderPrice">R$4.799,00</h2>
+                <a href="#product">
+                    <button class="buyButton">COMPRE AGORA!</button>
+                </a>
+            </div>
+        </div>
+    </div>
+   
+    <div class="features">
+        <div class="feature">
+            <img class="featureIcon" src="./img/shipping.png" alt="">
+            <span class="featureTitle">FRETE GRÁTIS</span>
+            <span class="featureDesc">Frete grátis para todo o mundo em todos os pedidos.</span>
+        </div>
+        <div class="feature">
+            <img class="featureIcon" src="./img/return.png" alt="">
+            <span class="featureTitle">DEVOLUÇÃO EM 30 DIAS</span>
+            <span class="featureDesc">Devolução sem questionamentos e reembolso fácil em 14 dias.</span>
+        </div>
+        <div class="feature">
+            <img class="featureIcon" src="./img/gift.png" alt="">
+            <span class="featureTitle">CARTÕES-PRESENTE</span>
+            <span class="featureDesc">Compre cartões-presente e use códigos de cupom facilmente.</span>
+        </div>
+        <div class="feature">
+            <img class="featureIcon" src="./img/contact.png" alt="">
+            <span class="featureTitle">ENTRE EM CONTATO!</span>
+            <span class="featureDesc">Mantenha contato por e-mail e sistema de suporte..</span>
+        </div>
+    </div>
+
+    <div class="product" id="product">
+        <img src="./img/iphone.png" alt="" class="productImg">
+        <div class="productDetails">
+            <h1 class="productTitle">IPHONE 16 PLUS</h1>
+            <h2 class="productPrice">R$9.024,05</h2>
+            <p class="productDesc">Lorem ipsum dolor sit amet consectetur impal adipisicing elit. Alias assumenda
+                dolorum
+                doloremque sapiente aliquid aperiam.</p>
+            <div class="colors">
+                <div class="color"></div>
+                <div class="color"></div>
+            </div>
+            <div class="sizes">
+                <div class="size">128GB</div>
+                <div class="size">256GB</div>
+                <div class="size">512GB</div>
+            </div>
+            <button class="productButton">COMPRE AGORA!</button>
+        </div>
+        <div class="payment">
+            <h1 class="payTitle">Informações Pessoais</h1>
+            <label>Nome e Sobrenome</label>
+            <input type="text" placeholder="João das Neves" class="payInput">
+            <label>Telefone</label>
+            <input type="text" placeholder="+00 1234 5678" class="payInput">
+            <label>Endereço</label>
+            <input type="text" placeholder="Av Elton, 145" class="payInput">
+            <h1 class="payTitle">Informações do Cartão</h1>
+            <div class="cardIcons">
+                <img src="./img/visa.png" width="40" alt="" class="cardIcon">
+                <img src="./img/master.png" alt="" width="40" class="cardIcon">
+            </div>
+            <input type="password" class="payInput" placeholder="Número do Cartão">
+            <div class="cardInfo">
+                <input type="text" placeholder="mm" class="payInput sm">
+                <input type="text" placeholder="yyyy" class="payInput sm">
+                <input type="text" placeholder="CVV" class="payInput sm">
+            </div>
+            <button class="payButton">Confirmar!</button>
+            <span class="close">X</span>
+        </div>
+    </div>
+    <div class="gallery">
+        <div class="galleryItem">
+            <h1 class="galleryTitle">Inovação</h1>
+            <img src="https://images.pexels.com/photos/1970139/pexels-photo-1970139.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
+                alt="" class="galleryImg">
+        </div>
+        <div class="galleryItem">
+            <img src="https://images.pexels.com/photos/5325947/pexels-photo-5325947.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
+                alt="" class="galleryImg">
+            <h1 class="galleryTitle">Sempre conectado com o mundo!</h1>
+        </div>
+        <div class="galleryItem">
+            <h1 class="galleryTitle">Tecnologia</h1>
+            <img src="https://images.pexels.com/photos/6802052/pexels-photo-6802052.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
+                alt="" class="galleryImg">
+        </div>
+    </div>
+    <div class="newSeason">
+        <div class="nsItem">
+            <img src="https://images.pexels.com/photos/5052877/pexels-photo-5052877.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
+                alt="" class="nsImg">
+        </div>
+        <div class="nsItem">
+            <h3 class="nsTitleSm">O QUE HÁ DE MELHOR NO MERCADO</h3>
+            <h1 class="nsTitle">Lançamentos</h1>
+            <h1 class="nsTitle">Novos Celulares</h1>
+            <a href="#nav">
+                <button class="nsButton">ESCOLHA COMO SE COMUNICAR</button>
+            </a>
+        </div>
+        <div class="nsItem">
+            <img src="https://images.pexels.com/photos/5052880/pexels-photo-5052880.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
+                alt="" class="nsImg">
+        </div>
+    </div>
+    <footer>
+        <div class="footerLeft">
+            <div class="footerMenu">
+                <h1 class="fMenuTitle">Sobre Nós</h1>
+                <ul class="fList">
+                    <li class="fListItem">SmartZone</li>
+                    <li class="fListItem">Contato</li>
+                    <li class="fListItem">Loja Física</li>
+                </ul>
+            </div>
+            <div class="footerMenu">
+                <h1 class="fMenuTitle">Links Últeis</h1>
+                <ul class="fList">
+                    <li class="fListItem">Suporte</li>
+                    <li class="fListItem">Reembolso</li>
+                    <li class="fListItem">FAQ</li>
+                    <li class="fListItem">Feedback</li>
+                </ul>
+            </div>
+            <div class="footerMenu">
+                <h1 class="fMenuTitle">Produtos</h1>
+                <ul class="fList">
+                    <li class="fListItem">Apple</li>
+                    <li class="fListItem">Samsung</li>
+                    <li class="fListItem">Motorola</li>
+                    <li class="fListItem">Xiaomi</li>
+                    <li class="fListItem">Asus</li>
+                </ul>
+            </div>
+        </div>
+        <div class="footerRight">
+            <div class="footerRightMenu">
+                <h1 class="fMenuTitle">Saber das novidade!</h1>
+                <div class="fMail">
+                    <input type="text" placeholder="seuemail@email.com" class="fInput">
+                    <button class="fButton">Enviar!</button>
+                </div>
+            </div>
+            <div class="footerRightMenu">
+                <h1 class="fMenuTitle">Siga nossas redes sociais</h1>
+                <div class="fIcons">
+                    <img src="./img/facebook.png" alt="" class="fIcon">
+                    <img src="./img/twitter.png" alt="" class="fIcon">
+                    <img src="./img/instagram.png" alt="" class="fIcon">
+                    <img src="./img/whatsapp.png" alt="" class="fIcon">
+                </div>
+            </div>
+            <div class="footerRightMenu">
+                <span class="copyright">@CoderHouse.JavaScript. 2024.</span>
+            </div>
+        </div>
+    </footer>
+    <script src="./app.js"></script>
+</body>
+</html>
